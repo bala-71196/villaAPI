@@ -1,8 +1,16 @@
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
+using villaAPI.Model;
+using villaAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnectionString"));
+});
 
 builder.Services.AddControllers(option => {
     //option.ReturnHttpNotAcceptable = true;
