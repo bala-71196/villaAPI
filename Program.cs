@@ -2,10 +2,13 @@ using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using villaAPI.Model;
 using villaAPI.Data;
+using villaAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddAutoMapper(typeof(MappingConfig));
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
