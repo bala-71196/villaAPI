@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using villaAPI.Data;
 
@@ -11,9 +12,11 @@ using villaAPI.Data;
 namespace villaAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221220160613_createVillaNumberTable")]
+    partial class createVillaNumberTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,21 +48,21 @@ namespace villaAPI.Migrations
                         new
                         {
                             VillaNo = 100,
-                            CreatedDateTime = new DateTime(2022, 12, 20, 21, 42, 54, 853, DateTimeKind.Local).AddTicks(8461),
+                            CreatedDateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SpecialDetails = "For Physically Challenged",
                             UpdatedDateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             VillaNo = 101,
-                            CreatedDateTime = new DateTime(2022, 12, 20, 21, 42, 54, 853, DateTimeKind.Local).AddTicks(8463),
+                            CreatedDateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SpecialDetails = "For Retired Person",
                             UpdatedDateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             VillaNo = 102,
-                            CreatedDateTime = new DateTime(2022, 12, 21, 21, 42, 54, 853, DateTimeKind.Local).AddTicks(8464),
+                            CreatedDateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SpecialDetails = " For Super Senior Citizen",
                             UpdatedDateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
@@ -112,7 +115,7 @@ namespace villaAPI.Migrations
                         {
                             Id = 1,
                             Amenity = "",
-                            CreatedDate = new DateTime(2022, 12, 20, 21, 42, 54, 853, DateTimeKind.Local).AddTicks(8271),
+                            CreatedDate = new DateTime(2022, 12, 20, 21, 36, 13, 435, DateTimeKind.Local).AddTicks(8394),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmastery.com/bluevillaimages/villa3.jpg",
                             Name = "Royal Villa",
@@ -125,7 +128,7 @@ namespace villaAPI.Migrations
                         {
                             Id = 2,
                             Amenity = "",
-                            CreatedDate = new DateTime(2022, 12, 20, 21, 42, 54, 853, DateTimeKind.Local).AddTicks(8282),
+                            CreatedDate = new DateTime(2022, 12, 20, 21, 36, 13, 435, DateTimeKind.Local).AddTicks(8406),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmastery.com/bluevillaimages/villa1.jpg",
                             Name = "Premium Pool Villa",
@@ -138,7 +141,7 @@ namespace villaAPI.Migrations
                         {
                             Id = 3,
                             Amenity = "",
-                            CreatedDate = new DateTime(2022, 12, 20, 21, 42, 54, 853, DateTimeKind.Local).AddTicks(8284),
+                            CreatedDate = new DateTime(2022, 12, 20, 21, 36, 13, 435, DateTimeKind.Local).AddTicks(8408),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmastery.com/bluevillaimages/villa4.jpg",
                             Name = "Luxury Pool Villa",
@@ -151,7 +154,7 @@ namespace villaAPI.Migrations
                         {
                             Id = 4,
                             Amenity = "",
-                            CreatedDate = new DateTime(2022, 12, 20, 21, 42, 54, 853, DateTimeKind.Local).AddTicks(8287),
+                            CreatedDate = new DateTime(2022, 12, 20, 21, 36, 13, 435, DateTimeKind.Local).AddTicks(8410),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmastery.com/bluevillaimages/villa5.jpg",
                             Name = "Diamond Villa",
@@ -164,7 +167,7 @@ namespace villaAPI.Migrations
                         {
                             Id = 5,
                             Amenity = "",
-                            CreatedDate = new DateTime(2022, 12, 20, 21, 42, 54, 853, DateTimeKind.Local).AddTicks(8290),
+                            CreatedDate = new DateTime(2022, 12, 20, 21, 36, 13, 435, DateTimeKind.Local).AddTicks(8412),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmastery.com/bluevillaimages/villa2.jpg",
                             Name = "Diamond Pool Villa",

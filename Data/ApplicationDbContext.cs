@@ -10,6 +10,7 @@ namespace villaAPI.Data
         {
         }
         public DbSet<villa> villas { get; set; }
+        public DbSet<VillaNumber> VillaNumber { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -74,6 +75,27 @@ namespace villaAPI.Data
                   Amenity = "",
                   CreatedDate = DateTime.Now
               });
+
+            modelBuilder.Entity<VillaNumber>().HasData(
+                   new VillaNumber
+                   {
+                       VillaNo = 100,
+                       SpecialDetails = "For Physically Challenged",
+                       CreatedDateTime = DateTime.Now
+                   },
+                   new VillaNumber
+                   {
+                       VillaNo = 101,
+                       SpecialDetails = "For Retired Person",
+                       CreatedDateTime = DateTime.Now
+                   },
+                   new VillaNumber
+                   {
+                       VillaNo = 102,
+                       SpecialDetails = " For Super Senior Citizen",
+                       CreatedDateTime = DateTime.Now
+                   }
+               );
         } 
     }
 }
