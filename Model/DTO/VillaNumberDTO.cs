@@ -9,5 +9,9 @@ namespace villaAPI.Model.DTO
         [Required]
         public int VillaNo { get; set; }
         public string SpecialDetails { get; set; }
+        public int VillaID { get; set; }
+        public villa Villa { get; set; }
+        public DateTime CreatedDateTime { get; set; }
+        public DateTime UpdatedDateTime { get; set; }
     }
 }
