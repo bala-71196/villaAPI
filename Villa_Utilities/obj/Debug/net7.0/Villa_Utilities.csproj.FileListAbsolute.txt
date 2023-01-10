@@ -1,0 +1,12 @@
+D:\aspdotnet\villaAPI\Villa_Utilities\bin\Debug\net7.0\Villa_Utilities.deps.json
+D:\aspdotnet\villaAPI\Villa_Utilities\bin\Debug\net7.0\Villa_Utilities.dll
+D:\aspdotnet\villaAPI\Villa_Utilities\bin\Debug\net7.0\Villa_Utilities.pdb
+D:\aspdotnet\villaAPI\Villa_Utilities\obj\Debug\net7.0\Villa_Utilities.csproj.AssemblyReference.cache
+D:\aspdotnet\villaAPI\Villa_Utilities\obj\Debug\net7.0\Villa_Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\aspdotnet\villaAPI\Villa_Utilities\obj\Debug\net7.0\Villa_Utilities.AssemblyInfoInputs.cache
+D:\aspdotnet\villaAPI\Villa_Utilities\obj\Debug\net7.0\Villa_Utilities.AssemblyInfo.cs
+D:\aspdotnet\villaAPI\Villa_Utilities\obj\Debug\net7.0\Villa_Utilities.csproj.CoreCompileInputs.cache
+D:\aspdotnet\villaAPI\Villa_Utilities\obj\Debug\net7.0\Villa_Utilities.dll
+D:\aspdotnet\villaAPI\Villa_Utilities\obj\Debug\net7.0\refint\Villa_Utilities.dll
+D:\aspdotnet\villaAPI\Villa_Utilities\obj\Debug\net7.0\Villa_Utilities.pdb
+D:\aspdotnet\villaAPI\Villa_Utilities\obj\Debug\net7.0\ref\Villa_Utilities.dll
